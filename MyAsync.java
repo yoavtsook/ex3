@@ -1,4 +1,4 @@
-package rubi.ex3;
+package yoav.ex3;
 
 import android.app.Activity;
 import android.content.Context;

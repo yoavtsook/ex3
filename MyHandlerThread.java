@@ -1,4 +1,4 @@
-package rubi.ex3;
+package yoav.ex3;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -30,7 +30,7 @@ public class MyHandlerThread extends HandlerThread {
             public void run() {
                 Intent intent = new Intent(myActivity, AsyncAndHandlerActivity.class);
                 time=SystemClock.elapsedRealtime()-time;
-                String message ="The Time It Took For Handler: "+String.valueOf(time);
+                String message ="time passed: "+String.valueOf(time);
                 intent.putExtra(EXTRA_MESSAGE, message);
                 intent.putExtra("msg2", Color.YELLOW);
                 myActivity.startActivity(intent);
